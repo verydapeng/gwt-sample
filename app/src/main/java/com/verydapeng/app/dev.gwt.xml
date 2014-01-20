@@ -1,0 +1,4 @@
+<module rename-to="app">
+    <inherits name="com.verydapeng.app.prod" />
+    <set-configuration-property name="CssResource.style" value="pretty"/>
+</module>
