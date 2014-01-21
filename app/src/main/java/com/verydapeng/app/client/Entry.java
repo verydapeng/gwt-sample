@@ -12,6 +12,6 @@ public class Entry implements EntryPoint {
 
     @Override
     public void onModuleLoad() {
-        RootPanel.get().add(new SimpleButtonPanel());
+        RootPanel.get().add(new LayoutWidget());
     }
 }

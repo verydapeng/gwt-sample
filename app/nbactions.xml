@@ -14,4 +14,14 @@
                 <goal>war:exploded</goal>
             </goals>
         </action>
+        <action>
+            <actionName>CUSTOM-dev</actionName>
+            <displayName>dev</displayName>
+            <goals>
+                <goal>gwt:run</goal>
+            </goals>
+            <properties>
+                <gwt.module>com.verydapeng.app.dev</gwt.module>
+            </properties>
+        </action>
     </actions>

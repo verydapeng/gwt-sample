@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder 
+    xmlns:ui='urn:ui:com.google.gwt.uibinder' 
+    xmlns:m="urn:import:com.verydapeng.app.client"
+    xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    
+    <ui:style src='LayoutWidget.css' >
+        
+    </ui:style>
+
+    <g:FlowPanel styleName='{style.LayoutWidget}'>
+        <g:FlowPanel styleName='{style.header}'>
+            <m:SimpleButtonPanel />
+        </g:FlowPanel>
+        
+        <g:FlowPanel styleName='{style.menu}'>
+            <m:LeftMenuWidget ui:field='leftMenuWidget' />
+        </g:FlowPanel>
+        
+        
+        <g:FlowPanel ui:field='mainContainer' styleName='{style.mainContainer}' />
+        
+        <g:HTML styleName='{style.footer}'>
+            Footer
+        </g:HTML>
+    </g:FlowPanel>
+
+</ui:UiBinder>

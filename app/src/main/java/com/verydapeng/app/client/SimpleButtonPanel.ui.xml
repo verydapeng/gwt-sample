@@ -3,10 +3,14 @@
     xmlns:ui='urn:ui:com.google.gwt.uibinder' 
     xmlns:g='urn:import:com.google.gwt.user.client.ui'>
     
-    <ui:style src='SimpleButtonPanel.css' />
+    <ui:style src='common.css' />
+    <ui:style field='css2' type='com.verydapeng.app.client.SimpleButtonPanel.MyCssStyle'>
+        .red { color: blue; }
+        .bold {}
+    </ui:style>
 
-    <g:FlowPanel styleName='{style.SimpleButtonPanel}'>
-        <g:Button ui:field='hello'>Hello</g:Button>
+    <g:FlowPanel>
+        <g:Button styleName='{style.red} {style.bold}' ui:field='hello'>Hello</g:Button>
         <g:Button ui:field='world'>World</g:Button>
     </g:FlowPanel>
 
